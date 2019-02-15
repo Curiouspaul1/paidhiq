@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div id="check">
+  <div class="container" id="check_btn">
+    <h1>Pay the token price to access your paid quiz</h1>
+    <form action="{{url_for('pay')}}" method="POST">
+      <script
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="{{pub_key}}"
+        data-amount="500"
+        data-name="Stripe.com"
+        data-description="Widget"
+        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+        data-locale="auto"
+        data-zip-code="false">
+      </script>
+    </form>
+    <img src="../static/img/card (1).png" alt="">
+  </div>
+  <div class="_vl"></div>
+  <div>
+      {% include 'includes/_login.html' %}
+  </div>
+</div>
+
+{% endblock %}

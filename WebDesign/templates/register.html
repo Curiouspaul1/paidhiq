@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="reg_log">
+		<div id="reg">
+			<h1>REGISTER!</h1>
+			<hr class="vr" size="">
+			<form method="POST" action="{{ url_for('register') }}">
+				{{ reg.csrf_token }}
+				<div class="form-group">
+					{{ reg.name.label }}
+					{{ reg.name }}
+				</div>
+
+				<div class="form-group">
+					{{ reg.username.label }}
+					{{ reg.username }}
+				</div>
+
+				<div class="form-group">
+					{{ reg.email.label }}
+					{{ reg.email }}
+				</div>
+
+				<div class="form-group">
+					{{ reg.password.label }}
+					{{ reg.password }}
+				</div>
+
+				<input type="submit" class = "btn_reg" name="" value="Submit">
+			</form>
+		</div>
+
+		<div class="_vl">
+
+    	</div>
+
+   		<div id="side_login">
+       		{% include 'includes/_login.html' %}
+    	</div>
+	</div>
+</body>
+</html>
+
+{% endblock %}

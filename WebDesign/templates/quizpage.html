@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="quiz">
+  <form class="" action="" method="post">
+    {% for item in quiz %}
+      <div class="q_quest">
+        <label>{{ item.id, item.question }}</label>
+          <div>
+            <input type="radio" name="a" value="A"> {{ opts.A }} <br>
+            <input type="radio" name="b" value="B"> {{ opts.B }} <br>
+            <input type="radio" name="c" value="C"> {{ opts.C }} <br>
+            <input type="radio" name="d" value="D"> {{ opts.D }}
+          </div>
+    {% endfor %}
+  </form>
+</div>
+
+
+{% endblock %}

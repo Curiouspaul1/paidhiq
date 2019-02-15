@@ -1,0 +1,250 @@
+/* Global Styles */
+body{
+    font-family: 'Varela Round', sans-serif;
+    margin:0;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width:100%;
+    margin:0 auto;
+    overflow-x:hidden;
+}
+
+
+.header{
+    margin:0;
+    background:#001D60;
+    padding:5px;
+
+}
+
+.navbar{
+    padding:0;
+    margin:0;
+}
+
+ul{
+    float:right;
+    margin:0;
+    padding:0;
+    margin-top:-40px;
+    margin-right:10px;
+}
+
+li{
+    display:inline;
+    list-style-type:none;
+    padding:0 20px;
+}
+
+.header a{
+    color:white;
+
+}
+
+/* Footer */
+footer{
+    background-color:#333;
+    font-size:2em;
+    text-align: center;
+    color:white;
+    padding:20px 30px;
+    position: fixed;
+    bottom:0;
+}
+
+
+
+/* IndexPage */
+
+#Gpt{
+    margin-top:80px;
+    color:#333;
+    text-align: center;
+
+}
+
+#Gpt h1{
+    font-size:4em;
+}
+
+#Gpt p{margin-top:80px;}
+
+#Gpt a{
+    color:#000;
+    font-size:2em;
+    border: solid rgb(0, 106, 253) 4px;
+    padding:10px 30px;
+    border-radius:15px;
+}
+
+#Gpt a:hover{
+    background-color:rgb(253, 164, 0);
+    color:#fff;
+    border:solid 0 rgb(253, 164, 0);
+}
+
+#home_menu{
+    margin-left:20px;
+    margin-top:170px;
+    margin-right:10px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-gap:1em
+}
+
+#home_menu a{
+    color:white;
+    font-size:2em;
+    font-weight:300;
+    text-align: center;
+}
+
+#faqs,#contact_us,#play_demo,#get_app{
+    font-weight:200;
+    padding:155px 5px;
+}
+
+#get_app{
+    background-image: linear-gradient(to bottom right, #fad151,#facb38,#f9c41f);
+}
+
+#faqs{
+    background-image: linear-gradient(to bottom right, #5098fc,#3689fb,#1d7afb);
+}
+
+#contact_us{
+    background-image: linear-gradient(to bottom right, #f855d9,#f73dd3,#f625ce);
+}
+
+#play_demo{
+    background-image: linear-gradient(to bottom right, #46ba3c,#2fb124,#19a90c);
+}
+
+
+
+/* Register */
+#reg_log{
+    display:grid;
+    grid-template-columns: 50% 5% 45%;
+    margin-top:70px;
+}
+
+#reg{
+    margin-left:50px;
+}
+
+._vl{
+    border-right:solid 2px black;
+    height:80%;
+    margin-top:20px;
+    margin-right:20px;
+}
+
+.vr{
+    width:200px;
+    position:absolute;
+    margin-top:-20px;
+}
+
+#reg form>div{
+    margin-bottom:50px;
+}
+
+.form-group input{
+    padding:10px;
+    width:70%;
+    margin:5px;
+    border:solid #333 1px;
+    border-radius:10px;
+}
+
+#side_login{
+    margin-left:40px;
+}
+
+#side_login input{
+    padding:10px;
+    margin:5px;
+    border:solid #333 1px;
+    border-radius:10px;
+    width:50%;
+}
+
+#side_login form>div{
+    margin-bottom:30px;
+}
+
+.btn_log{
+    padding:10px 20px;
+    background-color:#7AC74F;
+    color:white;
+    border-radius:10px;
+    border: solid 1px white;
+}
+
+.btn_reg{
+    padding:5px 20px;
+    background: #7AC74F;
+    color:white;
+    border:solid 1px #7AC74F;
+    border-radius:8px;
+}
+
+/* Login */
+#login{
+    margin-left: 40px;
+    margin-bottom: 550px;
+}
+#login input{
+    padding:10px;
+    margin:5px;
+    border:solid #333 1px;
+    border-radius:10px;
+    width:50%;
+}
+
+#login form>div{
+    margin-bottom:30px;
+}
+
+.btn_login{
+    padding:10px 20px;
+    background-color:#7AC74F;
+    color:white;
+    border-radius:10px;
+}
+
+#login p{
+    text-align: center;
+    margin-top:50px;
+}
+
+#check{
+    display:grid;
+    grid-template-columns: 50% 5% 45%;
+    margin-top:100px;
+}
+
+#check_btn{
+    margin-left:50px;
+}
+
+#check_btn img{
+    margin-top:50px;
+}
+
+/* QuizPage */
+.quiz{
+  margin-top: 50px;
+  margin-left:20px;
+}
+
+.q_quest{
+  margin-top:40px;
+}
